@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-    @Time : 2022/10/7 18:31
+    @Time : 2022/10/8/008 18:00
     @Author : 李子
     @Url : https://github.com/kslz
 """
 import click
 
-from sayhello import app, db
-from sayhello.models import Message
+from lizihello import app, db
+from lizihello.models import Message
 
 
 @app.cli.command()

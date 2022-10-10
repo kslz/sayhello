@@ -7,6 +7,7 @@
 import click
 from flask import Flask
 from flask_bootstrap import Bootstrap
+from flask_debugtoolbar import DebugToolbarExtension
 from flask_moment import Moment
 from flask_sqlalchemy import SQLAlchemy
 
@@ -19,7 +20,9 @@ db = SQLAlchemy(app)
 bootstrap = Bootstrap(app)
 moment = Moment(app)
 
-from lizihello import views, commands, aa
+from lizihello import views, commands
+
+toolbar = DebugToolbarExtension(app)
 
 
 
